@@ -1,10 +1,5 @@
 # Real-Time-Face-Mask-Detection
 
-CS 584 PROJECT REPORT (SPRING 2021)
-FACE MASK DETECTION
-Neha Reddy | G01281501
-Samriddhi Dashora | G01269042
-
 ABSTRACT
 
 The COVID-19 pandemic has adversely affected every aspect of life. Academic institutions
@@ -27,7 +22,7 @@ detection along with Haar cascade classifier to determine if a person in front o
 wearing a mask or not. This project is promising in tackling the spread of the virus and
 ensuring that the safety guidelines are followed.
 
-1. INTRODUCTION
+INTRODUCTION
    
 Currently, the world is facing many challenges due to the pandemic. According to the latest
 report, COVID-19 has globally infected over 147 million people causing over 3.11 million
@@ -46,7 +41,7 @@ In the rest of the report, the motivation for choosing this topic, the dataset u
 implemented, metrics for evaluating our model’s performance, and future work shall be
 discussed.
 
-3. PROBLEM STATEMENT
+PROBLEM STATEMENT
    
 With the rising cases of COVID-19, it has become very important to find a way to stop the
 disease from spreading. Before the whole population is completely vaccinated, it is essential
@@ -61,7 +56,7 @@ difficult. One solution to this problem is to use automated face mask detection 
 integrated with surveillance cameras to check if the people are following safety guidelines or
 not and alert them if they are not following the rules.
 
-5. LITERATURE REVIEW
+LITERATURE REVIEW
    
 We have reference from the following sources to build our model￾TITLE/LINK METHODS
 USED
@@ -136,7 +131,7 @@ The website discussed in detail on how
 unsharp filters work and how it can be used to
 enhance the image edges.
 
-4. METHODS AND TECHNIQUES
+METHODS AND TECHNIQUES
 
 Data Processing￾The OpenCV package was primarily used for pre-processing the images. The following are
 steps we followed for pre-processing our images-
@@ -160,7 +155,7 @@ Models￾A comparative study of four neural networks was done to find the best m
 accuracy and time taken to train.
 
 
-1) Convolutional Neural Networks (ConvNet)-
+**Convolutional Neural Networks (ConvNet)-**
    
 The simplest model used so far in this project is Convolutional Neural Networks. ConvNet
 captures the spatial dependencies of image pixels through layers of filters. The layers
@@ -179,7 +174,7 @@ The optimizer used for the CNN was ‘Adam’ with default LR of 0.001 and the l
 used was categorical cross entropy. The model trained for 10 epochs.
 
 
-3) InceptionV3-
+**InceptionV3-**
    
 InceptionV3 is a convolutional neural network of 48 layers used for object detection and
 feature extraction. We have used a pre-trained version of the neural network with weights of
@@ -194,7 +189,7 @@ classifying. The optimizer, loss function and number of epochs are kept the same
 ConvNet model.
 
 
-5) NASNETMobile -
+**NASNETMobile -**
 
 NASNETMobile is a convolutional neural network which can be easily deployed on any
 device because of it’s low memory usage and good performance in terms of accuracy. The
@@ -207,7 +202,7 @@ by a dropout layer of 50% dropout rate to further reduce overfitting. The final 
 optimizer, loss function and number of epochs are kept the same as the InceptionV3 model.
 
 
-8) MobileNetV2-
+**MobileNetV2-**
    
 MobileNetV2 is another neural network which can be deployed on mobile devices for use for
 feature extraction. We have used a pre-trained version of the neural network with weights of
@@ -236,7 +231,7 @@ the image can be sliced to get only the face part of the image.
 method was used to classify the image as ‘with mask’ or ‘without mask’.
 
 
-5. DISCUSSION AND RESULTS
+DISCUSSION AND RESULTS
    
 5.1 DATASETS
 
@@ -296,7 +291,7 @@ INCEPTIONV3 98.49%
 
 Real time mask detection pictures-
 
-6. CONCLUSION
+CONCLUSION
    
 Among all the models implemented in the project, MobileNetV2 performed best with an
 accuracy of 99.6% in the predictions and so it was used for real-time face mask detection.
@@ -313,7 +308,7 @@ so using it has increased the accuracy in all models except MobileNetV2. Also, t
 Global Average Pooling Layer worked so well in increasing the Testing accuracy must be
 because it was greatly reducing the overfitting by reducing the number of features.
 
-6.1 DIRECTIONS FOR FUTURE WORK
+6DIRECTIONS FOR FUTURE WORK
 
 
 In the future, we would like to integrate our face detection model with the face recognition
@@ -328,19 +323,27 @@ REFERENCES
 
 [1] Arjya Das; Mohammad Wasif Ansari; Rohini Basak Covid-19 Face Mask Detection
 Using TensorFlow, Keras and OpenCV Publisher: IEEE
+
 [2] Samuel Ady Sanjaya; Suryo Adi Rakhmawan Face Mask Detection Using
 MobileNetV2 in The Era of COVID-19 Pandemic Publisher: IEEE
+
 [3] K Suresh; MB Palangappa; S Bhuvan Face Mask Detection by using Optimistic
 Convolutional Neural Network, Publisher: IEEE
+
 [4] Mohammad Marufur Rahman; Md. Motaleb Hossen Manik; Md. Milon Islam;
 Saifuddin Mahmud; Jong-Hoon Kim An Automated System to Limit COVID-19 Using
 Facial Mask Detection in Smart City Network, Publisher: IEEE
+
 [5] Sammy V. Militante; Nanette V. Dionisio Deep Learning Implementation of
 Facemask and Physical Distancing Detection with Alarm Systems Publisher: IEEE
+
 [6] Vinitha.V, Velantina.V COVID-19 FACEMASK DETECTION WITH DEEP LEARNING
 AND COMPUTER VISION
+
 [7] Spatial Filters - https://homepages.inf.ed.ac.uk/rbf/HIPR2/gsmooth.htm
+
 [8] Unsharp Filters - https://homepages.inf.ed.ac.uk/rbf/HIPR2/unsharp.htm
+
 [9]Susanto Susanto; Febri Alwan Putra; Riska Analia; Ika Karlina Laila Nur
 Suciningtyas The Face Mask Detection For Preventing the Spread of COVID-19 at
 Politeknik Negeri Batam, Publisher: IEEE
