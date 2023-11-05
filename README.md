@@ -28,6 +28,7 @@ wearing a mask or not. This project is promising in tackling the spread of the v
 ensuring that the safety guidelines are followed.
 
 1. INTRODUCTION
+   
 Currently, the world is facing many challenges due to the pandemic. According to the latest
 report, COVID-19 has globally infected over 147 million people causing over 3.11 million
 deaths. The coronavirus spreads across people mainly through droplets and particles
@@ -46,6 +47,7 @@ implemented, metrics for evaluating our model’s performance, and future work s
 discussed.
 
 3. PROBLEM STATEMENT
+   
 With the rising cases of COVID-19, it has become very important to find a way to stop the
 disease from spreading. Before the whole population is completely vaccinated, it is essential
 to reduce the death toll as much as possible. This can be achieved if people follow the safety
@@ -60,6 +62,7 @@ integrated with surveillance cameras to check if the people are following safety
 not and alert them if they are not following the rules.
 
 5. LITERATURE REVIEW
+   
 We have reference from the following sources to build our model￾TITLE/LINK METHODS
 USED
 COMMENTS
@@ -134,6 +137,7 @@ unsharp filters work and how it can be used to
 enhance the image edges.
 
 4. METHODS AND TECHNIQUES
+
 Data Processing￾The OpenCV package was primarily used for pre-processing the images. The following are
 steps we followed for pre-processing our images-
 1) The images were resized according to the minimum size requirements of the neural
@@ -157,6 +161,7 @@ accuracy and time taken to train.
 
 
 1) Convolutional Neural Networks (ConvNet)-
+   
 The simplest model used so far in this project is Convolutional Neural Networks. ConvNet
 captures the spatial dependencies of image pixels through layers of filters. The layers
 created for the CNN in this project are￾a) Convolution layer with 32 filters, 3x3 filter size and same padding to capture
@@ -175,6 +180,7 @@ used was categorical cross entropy. The model trained for 10 epochs.
 
 
 3) InceptionV3-
+   
 InceptionV3 is a convolutional neural network of 48 layers used for object detection and
 feature extraction. We have used a pre-trained version of the neural network with weights of
 ‘Imagenet’. The minimum size requirement of images is 75x75 for this model and it takes
@@ -188,7 +194,9 @@ classifying. The optimizer, loss function and number of epochs are kept the same
 ConvNet model.
 
 
-5) NASNETMobile￾NASNETMobile is a convolutional neural network which can be easily deployed on any
+5) NASNETMobile -
+
+NASNETMobile is a convolutional neural network which can be easily deployed on any
 device because of it’s low memory usage and good performance in terms of accuracy. The
 minimum size requirement of images is 32x32 for this model and it takes only colored
 images as input. The last fully connected layer of NASNETMobile model is removed and
@@ -199,7 +207,8 @@ by a dropout layer of 50% dropout rate to further reduce overfitting. The final 
 optimizer, loss function and number of epochs are kept the same as the InceptionV3 model.
 
 
-7) MobileNetV2-
+8) MobileNetV2-
+   
 MobileNetV2 is another neural network which can be deployed on mobile devices for use for
 feature extraction. We have used a pre-trained version of the neural network with weights of
 ‘Imagenet’. The minimum size requirement of images is 96x96 for this model and it takes
@@ -230,6 +239,8 @@ method was used to classify the image as ‘with mask’ or ‘without mask’.
 5. DISCUSSION AND RESULTS
    
 5.1 DATASETS
+
+
 The dataset we used for our project was the 'Face mask ~12K Images dataset' taken from
 the kaggle website. The training and testing datasets are very balanced with an equal
 number of images with mask and without mask. Additionally, the dataset is diverse, having
@@ -240,6 +251,8 @@ Testing 483 509
 Validation 400 400
 
 5.2 METRICS
+
+
 The metrics we used to evaluate the performance of the models were-
 1) Accuracy￾Accuracy is calculated by dividing the number of correct predictions made by the model in
 each epoch with the total number of predictions made in that epoch. Since the dataset is
@@ -252,6 +265,8 @@ functions used interchangeably in the project. The loss for training and testing
 for each epoch. When the loss of any model decreased its accuracy increased.
 
 5.3 EXPERIMENTAL RESULTS
+
+
 We have observed the following while training our models-
 1) Using softmax activation function instead of other activation function in the last fully
 connected layer increased the accuracy in the predictions for 3 models. But, in MobileNetV2
@@ -282,6 +297,7 @@ INCEPTIONV3 98.49%
 Real time mask detection pictures-
 
 6. CONCLUSION
+   
 Among all the models implemented in the project, MobileNetV2 performed best with an
 accuracy of 99.6% in the predictions and so it was used for real-time face mask detection.
 MobileNetV2 is lightweight and occupies very little memory space of 14MB so it can be
@@ -298,6 +314,8 @@ Global Average Pooling Layer worked so well in increasing the Testing accuracy m
 because it was greatly reducing the overfitting by reducing the number of features.
 
 6.1 DIRECTIONS FOR FUTURE WORK
+
+
 In the future, we would like to integrate our face detection model with the face recognition
 model to identify the person who has violated the rules and alert them about it. Apart from
 this, we want to integrate our model with the model which calculates the social distance
@@ -306,6 +324,8 @@ boundary of 6 feet or do not wear a mask. This ensures people are safe from the 
 the virus in every possible way.
 
 REFERENCES
+
+
 [1] Arjya Das; Mohammad Wasif Ansari; Rohini Basak Covid-19 Face Mask Detection
 Using TensorFlow, Keras and OpenCV Publisher: IEEE
 [2] Samuel Ady Sanjaya; Suryo Adi Rakhmawan Face Mask Detection Using
