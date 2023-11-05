@@ -6,6 +6,7 @@ Neha Reddy | G01281501
 Samriddhi Dashora | G01269042
 
 ABSTRACT
+
 The COVID-19 pandemic has adversely affected every aspect of life. Academic institutions
 and other organizations are badly affected. There is no hope left for the situation other than
 bringing things back to normal. Normalizing the operations in various sectors is the need of
